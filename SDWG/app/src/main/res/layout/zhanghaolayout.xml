@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:onClick="zhanghao_bg_Proc">
+
+    <!--抢占默认焦点-->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:id="@+id/iv_zhanghao"
+        android:background="@mipmap/tx"
+        android:onClick="zhanghao_ivProc"/>
+    <View
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/iv"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_zhanghao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/et_zhanghao"
+        android:lines="1"
+        android:inputType="number"
+        android:hint="@string/zhanghao"
+        android:paddingLeft="16dp"
+        android:maxLength="20"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/etfocus"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_zhanghao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/et_mima"
+        android:inputType="textPassword"
+        android:ems="20"
+        android:lines="1"
+        android:hint="@string/mima"
+        android:paddingLeft="16dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/etfocus" />
+
+    <Switch
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_mima"
+        android:layout_alignLeft="@+id/et_mima"
+
+        android:id="@+id/s1"
+        android:text="@string/s1"
+        android:textSize="16sp"
+        android:textColor="#808080"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/s1"
+        android:layout_marginTop="60dp"
+
+        android:id="@+id/b1"
+        android:text="@string/b1"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:onClick="b1Proc"
+        android:background="@drawable/b1"/>
+
+</RelativeLayout>

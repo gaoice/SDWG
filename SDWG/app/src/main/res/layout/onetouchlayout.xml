@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:onClick="onetouch_bg_Proc">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:id="@+id/iv_onetouch"
+        android:background="@mipmap/sdwg2"
+        android:onClick="onetouch_ivProc"/>
+
+    <View
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/iv"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_onetouch"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/yijianname"
+        android:lines="1"
+        android:textCursorDrawable="@null"
+        android:maxLength="10"
+        android:textColor="#666666"/>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/yijianname"
+        android:layout_marginTop="130dp"
+
+        android:id="@+id/b2"
+        android:text="@string/b2"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:onClick="b2Proc"
+        android:background="@drawable/b2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yijianname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:text="支持自定义快捷方式的图标和名称\n\n更改图标或名称后重新生成才生效"
+        android:textColor="#c0c0c0"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="恢复默认图标和名称"
+        android:textColor="#72baa7"
+        android:onClick="onetouch_tvProc"/>
+
+</RelativeLayout>

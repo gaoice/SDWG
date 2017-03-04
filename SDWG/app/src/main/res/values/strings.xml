@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">苏大网关</string>
+    <string name="s1">漫游免认证</string>
+    <string name="b1">保存账号设置</string>
+    <string name="b2">生成 一键登录 快捷方式</string>
+    <string name="b3">登 录</string>
+    <string name="b4">注 销</string>
+    <string name="YiJian">一键登录</string>
+    <string name="zhanghao">账 号</string>
+    <string name="mima">密 码</string>
+    <string name="shouye">首 页</string>
+    <string name="onetouch">One Touch</string>
+</resources>

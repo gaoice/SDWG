@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:id="@+id/iv_shouye"
+        android:background="@mipmap/tx"/>
+
+    <View
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_shouye"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/tv_dqzh"
+        android:text="当前账号"
+        android:textSize="20sp"
+        android:textColor="#cccccc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_dqzh"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/tv_shouye"
+        android:text="还未设置账号"
+        android:textSize="22sp"
+        android:textColor="#8fbc8b"/>
+    <!--=================登录===============-->
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/b4"
+        android:layout_marginBottom="39dp"
+
+        android:id="@+id/b3"
+        android:text="@string/b3"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:onClick="b3Proc"
+        android:background="@drawable/b3" />
+
+    <!--=================注销===============-->
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:id="@+id/b4"
+        android:text="@string/b4"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:onClick="b4Proc"
+        android:background="@drawable/b4" />
+
+</RelativeLayout>
