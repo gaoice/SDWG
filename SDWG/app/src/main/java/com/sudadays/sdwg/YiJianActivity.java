@@ -36,7 +36,7 @@ public class YiJianActivity extends Activity {
                         conn.setRequestMethod("POST");
                         conn.setDoOutput(true);
                         conn.setDoInput(true);
-                        conn.setConnectTimeout(1000);//超时设置
+                        //conn.setConnectTimeout(1000);//超时设置
                         OutputStream out = conn.getOutputStream();
                         out.write(data.getBytes());
                         out.flush();
