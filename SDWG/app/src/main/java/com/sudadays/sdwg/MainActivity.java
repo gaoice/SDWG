@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                         conn.setRequestMethod("POST");
                         conn.setDoOutput(true);
                         conn.setDoInput(true);
-                        conn.setConnectTimeout(1000);//超时设置
+                        //conn.setConnectTimeout(1000);//超时设置
                         OutputStream out = conn.getOutputStream();
                         out.write(data.getBytes());
                         out.flush();
@@ -329,7 +329,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
                     conn.setDoInput(true);
-                    conn.setConnectTimeout(1000);//超时设置
+                    //conn.setConnectTimeout(1000);//超时设置
 
                     BufferedReader br= new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     StringBuffer sb = new StringBuffer();
